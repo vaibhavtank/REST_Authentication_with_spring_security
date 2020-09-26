@@ -75,8 +75,8 @@ public class AppConfig extends WebMvcConfigurerAdapter {
 		BasicDataSource ds = new BasicDataSource();
 		ds.setDriverClassName("com.mysql.jdbc.Driver");
 		boolean remote = false;
-		String DBNAME = ((remote) ? "emxcelso_desk_db" : "desk_db");
-		String USERNAME = ((remote) ? "emxcelso_desk_db" : "root");
+		String DBNAME = ((remote) ? "desk_db" : "desk_db");
+		String USERNAME = ((remote) ? "desk_db" : "root");
 		String PASSWORD = ((remote) ? "xF2yXoQf" : "12345");
 		ds.setUrl("jdbc:mysql://localhost:3306/" + DBNAME);
 		ds.setUsername(USERNAME);
